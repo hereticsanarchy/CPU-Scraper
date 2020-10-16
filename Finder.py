@@ -10,10 +10,7 @@ def GUI():
     root = tk.Tk()
 
 
-    # Just to make it look nice! (Editing window aesthetics)
-
     root.title('CPU Stat Finder')
-    #root.wm_iconbitmap('F:\PyCharm Community Edition 2020.2.2\skeletons\CPU_Finder\Iconsmind-Outline-CPU.ico')
 
     # empty variables for radio buttons and entry widgets
     GUI.brand = tk.StringVar(None, 'AMD')
@@ -26,10 +23,9 @@ def GUI():
     root.resizable(0, 0)
 
     # Widgets
-    #canBG = tk.PhotoImage(file='CircuitBoard.png')
+    
     canvas = tk.Canvas(root,bg='white')
     canvas.place(relwidth=1, relheight=1)
-    #canvas.create_image(0,0,image=canBG,anchor='nw')
 
     label = tk.Label(root, text='Brand:', bg = 'white',bd =3)
     label.place(relx=.2, rely=.3)
