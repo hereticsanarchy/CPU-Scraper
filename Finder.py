@@ -60,6 +60,8 @@ def GUI():
         result = tk.messagebox.showinfo('Search Results',info())
 
     entry.bind('<Return>',Result)
+    
+    
     # Call new window on button click
     button = tk.Button(root, text='GO!!!', command=lambda: Result(), bg ='white')
     button.place(relx=.43, rely=.8)
