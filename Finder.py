@@ -53,7 +53,7 @@ def GUI():
             return info.text
 
         except AttributeError:
-            return 'No CPU found. Sorry Nick!'
+            return 'No CPU found. Sorry!'
 
     # Show output of info() in new window
     def Result(event = None):
